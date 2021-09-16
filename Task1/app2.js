@@ -17,39 +17,39 @@ function rowArray(width, height, innerWidht, innerHeight) {
     
     while (startCol <= endCol && startRow <= endRow) {
         for (let i = innerCol; i >= startCol; i--) {
-            newA.push(matrix[innerRow][i]);//17,16
+            newA.push(matrix[innerRow][i]);
         }
         innerRow--;
         for (let i = startCol; i <= innerCol; i++) {
-            newA.push(matrix[innerRow][i]);//11,12
+            newA.push(matrix[innerRow][i]);
         }
         innerCol++;
         for (let j = innerRow; j <= innerHeight; j++) {
-            newA.push(matrix[j][innerCol]);//13,18,23
+            newA.push(matrix[j][innerCol]);
         }
         innerCol--;
         for (let i = innerCol; i >= startCol; i--) {
-            newA.push(matrix[innerHeight][i]);//22, 21
+            newA.push(matrix[innerHeight][i]);
         }
         innerRow--;
         innerCol++;
         for (let i = startCol; i <= innerCol; i++) {
-            newA.push(matrix[innerRow][i]); //6, 7, 8
+            newA.push(matrix[innerRow][i]); 
         }
         innerCol++;
         for (let j = innerRow; j <= endRow; j++) {
-            newA.push(matrix[j][innerCol]);//9, 14, 19, 24, 29
+            newA.push(matrix[j][innerCol]);
         }
         innerCol--;
         for (let i = innerCol; i >= startCol; i--) {
-            newA.push(matrix[endRow][i]);//28, 27, 26
+            newA.push(matrix[endRow][i]);
         }
         for (i = startCol; i <= endCol; i++) {
-            newA.push(matrix[startRow][i]);//1, 2, 3, 4,5
+            newA.push(matrix[startRow][i]);
         }
         startRow++;
         for (let j = startRow; j <= endRow; j++) {
-        newA.push(matrix[j][endCol]);//10,15,20,25,30
+        newA.push(matrix[j][endCol]);
         }
         return newA;
     }
