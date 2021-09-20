@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Matrix</title>
+</head>
+<body>
+    <main>
+        <h1>Welcome to the Matrix</h1>
+        <p class="text">Want to create a matrix and go around it in a spiral? Just put numbers.</p>
+        <p>
+            <labe> Width of your matrix</labe>
+            <input type="number" id="width" min="1" max="100">
+        </p>
+        <p>
+            <labe> Height of your matrix</labe>
+            <input type="number" id="height" min="1" max="100">
+        </p>
+        <p class="text">Now, you can transform it.</p>
+        <p>
+            <labe> Write number for start colonm </labe>
+            <input type="number" id="startwidth" min="1" max="100">
+        </p>
+        <p>
+            <labe> Write number for start row</labe>
+            <input type="number" id="startheight" min="1" max="100">
+        </p>
+        <div class="side">
+            <img class="pils" src="img/pil.png">
+            <p> Choose side</p>
+            <p class="choose-block">
+                <select id="side" class="choose-select">
+                    <option value="left" class="choose">Clock</option>
+                    <option value="right" class="choose">No clock</option>
+                </select>
+            </p>
+        </div>
+        <button class="btn" id="sendNew" type="button">Make a Matrix</button>
+        <div class="return" id="return">
+            <div class="table">
+                <table id="table"></table>
+            </div>
+           
+            <div id="result" class="result"></div>
+        </div>  
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

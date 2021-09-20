@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 24px;
+  background-image: url(img/regnum_picture_1628268020778283_normal.jpg);
+  color: #fff;
+}
+main {
+  width: 50%;
+  margin: 0 auto;
+  padding: 5px;
+  background-color: rgba(12, 12, 12, 0.6);
+}
+h1 {
+  text-align: center;
+  margin: 25px 0;
+}
+p {
+  margin: 15px 0;
+}
+.text {
+  text-align: center;
+}
+table {
+  margin-bottom: 10px;
+}
+input {
+  padding: 4px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  background-color: rgb(52, 240, 46);
+  outline: none;
+  opacity: 0.8;
+}
+.pils {
+  width: 50%;
+}
+.side {
+  text-align: center;
+}
+.choose-block {
+  margin-top: 15px;
+  margin-bottom: 60px;
+}
+.choose-select {
+  padding: 5px;
+  width: 50%;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(52, 240, 46);
+  outline: none;
+  opacity: 0.8;
+}
+.choose {
+  font-size: 18px;
+  border: none;
+  background-color: rgb(52, 240, 46);
+  text-align: center;
+}
+.btn {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(52, 240, 46);
+  font-weight: bold;
+  opacity: 0.8;
+}
+.btn:hover {
+  opacity: 1;
+}
+.return {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
